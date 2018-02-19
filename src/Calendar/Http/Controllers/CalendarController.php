@@ -1,10 +1,10 @@
 <?php
 
-namespace  Manzoli2122\Salao\Cadastro\Http\Controllers;
+namespace  Manzoli2122\Salao\Calendar\Http\Controllers;
 
 use Manzoli2122\Salao\Cadastro\Http\Controllers\Padroes\Controller ;
 
-class CadastroController extends Controller
+class CalendarController extends Controller
 {
 	
     public function __construct(  ){
@@ -13,7 +13,7 @@ class CadastroController extends Controller
        
     public function index()
     {
-        return view("cadastro::index");
+        return view("calendar::index");
     }
         
 }

@@ -1,5 +1,5 @@
 {
-    "name": "manzoli2122/salao-cadastro",
+    "name": "manzoli2122/salao-calendar",
     "description": "Pacote Laravel",
     "keywords": ["laravel"],
     "license": "MIT",
@@ -17,13 +17,13 @@
     "autoload": {
         
         "psr-4": {
-            "Manzoli2122\\Salao\\Cadastro\\": "src/Cadastro/"
+            "Manzoli2122\\Salao\\Calendar\\": "src/Calendar/"
         }
     },
     "extra":{
         "laravel":{
             "providers":[
-                "Manzoli2122\\Salao\\Cadastro\\CadastroServiceProvider"
+                "Manzoli2122\\Salao\\Calendar\\CalendarServiceProvider"
             ]
             
         }

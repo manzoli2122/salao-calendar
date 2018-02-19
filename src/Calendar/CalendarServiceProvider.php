@@ -1,24 +1,24 @@
 <?php
 
-namespace Manzoli2122\Salao\Cadastro;
+namespace Manzoli2122\Salao\Calendar;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;
 
-class CadastroServiceProvider extends ServiceProvider
+class CalendarServiceProvider extends ServiceProvider
 {
 
 
     protected $defer = false;
-    protected $namespace = 'Manzoli2122\Salao\Cadastro\Http\Controllers'  ;
+    protected $namespace = 'Manzoli2122\Salao\Calendar\Http\Controllers'  ;
     
     public function boot()
     {
         // Publish config files
         $this->publishes([
-            __DIR__.'/../config/config.php' =>  config_path('cadastro.php'), 
-        ], 'cadastro_config');
+            __DIR__.'/../config/config.php' =>  config_path('calendar.php'), 
+        ], 'calendar_config');
         $this->mapWebRoutes();     
-        $this->loadViewsFrom(__DIR__.'/Views', 'cadastro');
+        $this->loadViewsFrom(__DIR__.'/Views', 'calendar');
     }
 
 
@@ -43,7 +43,7 @@ class CadastroServiceProvider extends ServiceProvider
     private function mergeConfig()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/../config/config.php', 'cadastro'
+            __DIR__.'/../config/config.php', 'calendar'
         );
     }
 

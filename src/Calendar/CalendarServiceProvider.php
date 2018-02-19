@@ -18,6 +18,7 @@ class CalendarServiceProvider extends ServiceProvider
             __DIR__.'/../config/config.php' =>  config_path('calendar.php'), 
         ], 'calendar_config');
         $this->mapWebRoutes();     
+        $this->loadMigrationsFrom(__DIR__.'/Database/Migrations');
         $this->loadViewsFrom(__DIR__.'/Views', 'calendar');
     }
 
